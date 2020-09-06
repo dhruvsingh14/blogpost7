@@ -1,0 +1,115 @@
+Microsoft Windows [Version 10.0.18362.1016]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\drewn>cd C:\Users\drewn\Desktop\wk4_post7\2_Post 7_analysis
+
+C:\Users\drewn\Desktop\wk4_post7\2_Post 7_analysis>
+C:\Users\drewn\Desktop\wk4_post7\2_Post 7_analysis>py personal_data.py
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/C:/spark/spark-3.0.0-preview2-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.0-preview2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/08/24 21:54:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
++---------------+---------------+---------------+---------+-----+-----+
+|   CreationDate|        EndDate|      StartDate|     Type| Unit|Value|
++---------------+---------------+---------------+---------+-----+-----+
+|3/23/2019 21:11|3/23/2019 17:53|3/23/2019 17:43|StepCount|count|  931|
+|3/23/2019 21:11|3/23/2019 18:03|3/23/2019 17:53|StepCount|count|  840|
+|3/23/2019 21:11|3/23/2019 18:13|3/23/2019 18:03|StepCount|count|  831|
+|3/23/2019 21:11|3/23/2019 18:23|3/23/2019 18:13|StepCount|count|  341|
+|3/23/2019 21:11|3/23/2019 18:33|3/23/2019 18:23|StepCount|count|  875|
+|3/23/2019 21:38|3/23/2019 21:35|3/23/2019 21:25|StepCount|count|  171|
+|3/23/2019 21:47|3/23/2019 21:45|3/23/2019 21:35|StepCount|count|  844|
+|3/23/2019 21:56|3/23/2019 21:53|3/23/2019 21:45|StepCount|count|  539|
+|3/23/2019 22:08|3/23/2019 22:06|3/23/2019 21:56|StepCount|count|  875|
+|3/23/2019 22:17|3/23/2019 22:08|3/23/2019 22:06|StepCount|count|  182|
+|3/23/2019 22:37|3/23/2019 22:26|3/23/2019 22:19|StepCount|count|   28|
+|3/23/2019 23:00|3/23/2019 22:50|3/23/2019 22:40|StepCount|count|  254|
+|3/23/2019 23:08|3/23/2019 22:58|3/23/2019 22:50|StepCount|count|  225|
+| 3/24/2019 6:51| 3/24/2019 6:38| 3/24/2019 6:38|StepCount|count|    8|
+|3/24/2019 10:01| 3/24/2019 9:57| 3/24/2019 9:47|StepCount|count|  112|
+|3/24/2019 10:10|3/24/2019 10:08| 3/24/2019 9:59|StepCount|count|  119|
+|3/24/2019 10:23|3/24/2019 10:13|3/24/2019 10:11|StepCount|count|  102|
+|3/24/2019 10:36|3/24/2019 10:26|3/24/2019 10:24|StepCount|count|   59|
+|3/24/2019 10:49|3/24/2019 10:45|3/24/2019 10:35|StepCount|count|  178|
+|3/24/2019 13:53|3/24/2019 13:48|3/24/2019 13:39|StepCount|count|  350|
++---------------+---------------+---------------+---------+-----+-----+
+only showing top 20 rows
+
+None
+root
+ |-- CreationDate: string (nullable = true)
+ |-- EndDate: string (nullable = true)
+ |-- StartDate: string (nullable = true)
+ |-- Type: string (nullable = true)
+ |-- Unit: string (nullable = true)
+ |-- Value: string (nullable = true)
+
+None
++--------------------+-----+
+|                Type|count|
++--------------------+-----+
+|      FlightsClimbed| 4149|
+|DistanceWalkingRu...|22456|
+|           StepCount|22396|
+|HeadphoneAudioExp...|10116|
++--------------------+-----+
+
+20/08/24 21:54:58 WARN ProcfsMetricsGetter: Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
++----+-----+--------+----------------+-----------------+
+| min|  max|    mean|          stddev|      minmaxratio|
++----+-----+--------+----------------+-----------------+
+|4149|22456|14779.25|9159.61219612126|5.412388527355989|
++----+-----+--------+----------------+-----------------+
+
++----+-----+--------+----------------+-----------------+
+| min|  max|    mean|          stddev|      minmaxratio|
++----+-----+--------+----------------+-----------------+
+|4149|22456|14779.25|9159.61219612126|5.412388527355989|
++----+-----+--------+----------------+-----------------+
+
+Row(CreationDate='3/23/2019 21:11', EndDate='3/23/2019 18:02', StartDate='3/23/2019 17:54', Type='FlightsClimbed', Unit='count', Value='5')
++--------------------+-----+
+|                Type|count|
++--------------------+-----+
+|      FlightsClimbed| 4149|
+|DistanceWalkingRu...| 4149|
+|           StepCount| 4149|
+|HeadphoneAudioExp...| 4149|
++--------------------+-----+
+
+59117
++---------------+---------------+---------------+---------+-----+-----+
+|   CreationDate|        EndDate|      StartDate|     Type| Unit|Value|
++---------------+---------------+---------------+---------+-----+-----+
+|3/23/2019 21:11|3/23/2019 17:53|3/23/2019 17:43|StepCount|count|  931|
+|3/23/2019 21:11|3/23/2019 18:03|3/23/2019 17:53|StepCount|count|  840|
+|3/23/2019 21:11|3/23/2019 18:13|3/23/2019 18:03|StepCount|count|  831|
+|3/23/2019 21:11|3/23/2019 18:23|3/23/2019 18:13|StepCount|count|  341|
+|3/23/2019 21:11|3/23/2019 18:33|3/23/2019 18:23|StepCount|count|  875|
+|3/23/2019 21:38|3/23/2019 21:35|3/23/2019 21:25|StepCount|count|  171|
+|3/23/2019 21:47|3/23/2019 21:45|3/23/2019 21:35|StepCount|count|  844|
+|3/23/2019 21:56|3/23/2019 21:53|3/23/2019 21:45|StepCount|count|  539|
+|3/23/2019 22:08|3/23/2019 22:06|3/23/2019 21:56|StepCount|count|  875|
+|3/23/2019 22:17|3/23/2019 22:08|3/23/2019 22:06|StepCount|count|  182|
+|3/23/2019 22:37|3/23/2019 22:26|3/23/2019 22:19|StepCount|count|   28|
+|3/23/2019 23:00|3/23/2019 22:50|3/23/2019 22:40|StepCount|count|  254|
+|3/23/2019 23:08|3/23/2019 22:58|3/23/2019 22:50|StepCount|count|  225|
+| 3/24/2019 6:51| 3/24/2019 6:38| 3/24/2019 6:38|StepCount|count|    8|
+|3/24/2019 10:01| 3/24/2019 9:57| 3/24/2019 9:47|StepCount|count|  112|
+|3/24/2019 10:10|3/24/2019 10:08| 3/24/2019 9:59|StepCount|count|  119|
+|3/24/2019 10:23|3/24/2019 10:13|3/24/2019 10:11|StepCount|count|  102|
+|3/24/2019 10:36|3/24/2019 10:26|3/24/2019 10:24|StepCount|count|   59|
+|3/24/2019 10:49|3/24/2019 10:45|3/24/2019 10:35|StepCount|count|  178|
+|3/24/2019 13:53|3/24/2019 13:48|3/24/2019 13:39|StepCount|count|  350|
++---------------+---------------+---------------+---------+-----+-----+
+only showing top 20 rows
+
+
+C:\Users\drewn\Desktop\wk4_post7\2_Post 7_analysis>SUCCESS: The process with PID 9712 (child process of PID 12792) has been terminated.
+SUCCESS: The process with PID 12792 (child process of PID 16492) has been terminated.
+SUCCESS: The process with PID 16492 (child process of PID 11344) has been terminated.

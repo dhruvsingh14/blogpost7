@@ -1,0 +1,4 @@
+skipping past all the conditionals that were implemented in the week 1 syntax.
+
+can revert back to them later. when need be.
+
